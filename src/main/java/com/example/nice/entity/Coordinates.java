@@ -20,10 +20,11 @@ public class Coordinates {
 
     @Column(name="x")
     @NotEmpty(message = "X Coordinate can NOT be null or empty")
-    @Min(0)
+    @Min(value = 0 , message = "X need to be greater then 0")
     private String x;
 
     @Column(name="y")
     @NotEmpty(message = "Y Coordinate can NOT be null or empty")
     private String y;
+
 }

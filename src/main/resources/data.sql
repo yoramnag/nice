@@ -1,0 +1,9 @@
+insert into COORDINATES (id,x,y) values(10000,'0','1');
+insert into COORDINATES (id,x,y) values(10001,'1','8');
+insert into COORDINATES (id,x,y) values(10002,'2','6');
+insert into COORDINATES (id,x,y) values(10003,'3','2');
+insert into COORDINATES (id,x,y) values(10004,'4','5');
+insert into COORDINATES (id,x,y) values(10005,'5','4');
+insert into COORDINATES (id,x,y) values(10006,'6','8');
+insert into COORDINATES (id,x,y) values(10007,'7','3');
+insert into COORDINATES (id,x,y) values(10008,'8','7');
