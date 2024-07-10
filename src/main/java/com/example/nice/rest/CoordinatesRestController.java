@@ -32,10 +32,10 @@ public class CoordinatesRestController {
 
     @GetMapping("/calculateSquare")
     public int calculateSquare(
-            @RequestParam @Pattern(regexp = "^[0-9]*$", message = "transactionId must be only digits") String bar1,
-            @RequestParam @Pattern(regexp = "^[0-9]*$", message = "transactionId must be only digits") String bar2
+            @RequestParam @Pattern(regexp = "^[0-9]*$", message = "bar1 must be only digits") String bar1,
+            @RequestParam @Pattern(regexp = "^[0-9]*$", message = "bar2 must be only digits") String bar2
     ){
-
+        coordinatesService.calculateSquare(bar1,bar2);
         return 0;
     }
 
