@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "5ae7422a-b47b-40fd-9750-d3564e5f4f24",
+		"name": "nice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3913811"
+	},
+	"item": [
+		{
+			"name": "add new coordinate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"x\":\"10\",\r\n    \"y\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/createCoordinate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"createCoordinate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all coordinate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/getAllCoordinates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getAllCoordinates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calculateSquare",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/calculateSquare?bar1=1&bar2=8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"calculateSquare"
+					],
+					"query": [
+						{
+							"key": "bar1",
+							"value": "1"
+						},
+						{
+							"key": "bar2",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
