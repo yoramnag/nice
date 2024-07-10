@@ -1,6 +1,8 @@
 package com.example.nice.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.*;
 
 @Entity
@@ -17,8 +19,11 @@ public class Coordinates {
     private int id;
 
     @Column(name="x")
+    @NotEmpty(message = "X Coordinate can NOT be null or empty")
+    @Min(0)
     private String x;
 
     @Column(name="y")
+    @NotEmpty(message = "Y Coordinate can NOT be null or empty")
     private String y;
 }
