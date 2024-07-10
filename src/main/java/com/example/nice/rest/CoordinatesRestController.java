@@ -35,8 +35,8 @@ public class CoordinatesRestController {
             @RequestParam @Pattern(regexp = "^[0-9]*$", message = "bar1 must be only digits") String bar1,
             @RequestParam @Pattern(regexp = "^[0-9]*$", message = "bar2 must be only digits") String bar2
     ){
-        coordinatesService.calculateSquare(bar1,bar2);
-        return 0;
+        int result = coordinatesService.calculateSquare(bar1,bar2);
+        return result;
     }
 
     @PostMapping("/createCoordinate")
